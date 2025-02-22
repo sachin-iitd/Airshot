@@ -1,20 +1,17 @@
-# Delhi Pollution Dataset Benchmarking
+# Kolkata Pollution Dataset Benchmarking
 
 We use this repository for various algorithms and methods used to analyze the Delhi pollution data available at 
-https://www.cse.iitd.ac.in/pollutiondata
+https://www.cse.iitd.ac.in/pollutiondata/kolkata
 
 ### Datasets benchmarked
 
-Delhi Dataset: https://www.cse.iitd.ac.in/pollutiondata
+Kolkata Dataset: https://www.cse.iitd.ac.in/pollutiondata/kolkata
+
+Delhi Dataset: https://www.cse.iitd.ac.in/pollutiondata/delhi
 
 Canada Dataset: http://www.mdpi.com/2306-5729/4/1/2/s1 (via https://www.mdpi.com/2306-5729/4/1/2)
 
 USA Dataset: https://github.com/mayukh18/DEAP/blob/main/city_pollution_data.csv
-
-### Preprocessing of datasets
-
-We preprocess the datasets with the ``preprocess.py`` script to convert the datasets to a uniform processed format for K-fold validation using different benchmarking algorithms.
-This makes the same training and test data available to all the algorithms.
 
 ### Algorithms benchmarked
 
@@ -43,7 +40,7 @@ It is implemented in `nsgp` directory with reference code from https://github.co
 
 ### Benchmarking Modes
 
-In different algorithms, we use the `canada`variable to control the datasets (and usable mode) being used.
+In different algorithms, we use the `locid`variable to control the datasets (and usable mode) being used.
 
 `0` enables the Delhi dataset benchmarking for Nov 12, 2020 to Jan 30, 2021
 
