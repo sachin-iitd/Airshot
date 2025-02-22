@@ -1,6 +1,6 @@
 # Kolkata Pollution Dataset Benchmarking
 
-We use this repository for various algorithms and methods used to analyze the Delhi pollution data available at 
+We use this repository for various algorithms and methods used to analyze the Kolkata pollution data available at 
 https://www.cse.iitd.ac.in/pollutiondata/kolkata
 
 ### Datasets benchmarked
