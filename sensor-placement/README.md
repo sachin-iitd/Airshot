@@ -1,4 +1,4 @@
-## AirShot: Pollution Sensor Recommendation
+## Pollution Sensor Recommendation
 
 Run as
 
