@@ -22,11 +22,11 @@ CAAQMS vs LCS data on Dec 15, 2023 at Kolkata is shown left below and one LCS un
 ![Coloc](img/coloc.png)
 
 #### 4. Data fitting methods: Given the trusted gold data from co-located or nearby CAAQMS, we employ different supervised learning algorithms/models to fit LCS data to CAAQMS.
-1. Linear Regression: We use a linear model without interceptor for the calibration. The final PM is a linear combination of T and RH.
-2. Random Forest (RF): An RF ensemble, with 100 estimators, is one of the best algorithms for pollution related analysis [Chauhan et al., 2023].
-3. GradBoost: Gradient boosting decision trees are an ensemble utilized to decrease the Bias error.
-4. XGBoost: Extreme Gradient Boosting is a scalable and distributed gradient-boosted decision tree machine learning library, which provides parallel tree boosting.
-5. Multilayer perceptron (MLP): We utilize neural models, of 10 x 50 x 10 hidden layers, to approximate the calibration function.
+1. **_Linear Regression_**: We use a linear model without interceptor for the calibration. The final PM is a linear combination of T and RH.
+2. **_Random Forest (RF)_**: An RF ensemble, with 100 estimators, is one of the best algorithms for pollution related analysis [Chauhan et al., 2023].
+3. **_GradBoost_**: Gradient boosting decision trees are an ensemble utilized to decrease the Bias error.
+4. **_XGBoost_**: Extreme Gradient Boosting is a scalable and distributed gradient-boosted decision tree machine learning library, which provides parallel tree boosting.
+5. **_Multilayer perceptron (MLP)_**: We utilize neural models, of 10 x 50 x 10 hidden layers, to approximate the calibration function.
 
 Considering the simplicity, good generalization, and being a model of choice in recent state-of-the-arts [Nobell et al., 2023], Linear Regression is our default calibration model across different seasons.
 We learn the calibration model using meteorological factors (Temp. and RH) over colocation A and test it over the two colocation CAAQMS at B and C using the script ``python calibrate.py``.
