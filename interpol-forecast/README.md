@@ -1,4 +1,4 @@
-# Kolkata Pollution Dataset Benchmarking
+# Kolkata Pollution Dataset Interpolation & Forecasting Benchmarking
 
 We use this repository for various algorithms and methods used to analyze the Kolkata pollution data available at 
 https://www.cse.iitd.ac.in/pollutiondata/kolkata
@@ -51,3 +51,9 @@ In different algorithms, we use the `locid`variable to control the datasets (and
 `3` enables the USA dataset benchmarking for Jan 1, 2019 to Dec 11, 2020.
 
 Also, by default the algorithms work for `fold=0`, the other folds need to specified through command line arguments. 
+
+### Interpolation performance over different datasets
+
+The Calib in X-axis labels denote experiments with the calibrated data. For Kolkata, (S) denotes static LCS data and both Static+Mobile data otherwise.
+
+![Inter](img/interpol.png)
