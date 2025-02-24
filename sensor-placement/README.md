@@ -1,58 +1,18 @@
 ## Pollution Sensor Recommendation
 
-Run as
+Run as ``python -m src.main`` for RLselect based sensor placement.
 
-``python -m src.main``
+Run as ``python -m src.main --baseline=<baseline_name>`` for existing baselines based sensor placement.
 
-The important parameters are under args.debug flag in main.py
+``<baseline_name>`` can be among random, bwcentrality, degree, pagerank, maxerr, coverage, lerner, mi
+
+Other config parameters can be explored under the args.debug flag in main.py
 
 ### Prerequisites
 
 pip install numpy pandas torch scikit-learn 
 
 Create the folders _**out**_ and **_models_** in the base directory.
-
-## Kolkata Dataset
-
-The calibrated Kolkata Dataset is available at 
-
-[Kolkata Pollution Website](http://cse.iitd.ac.in/pollutiondata/kolkata/details)
-
-[Direct Link](https://github.com/sachin-iitd/KolkataDataset)
-
-The processed init-train-validate-test splitted data is provided in _**data**_ folder.
-
-### Sample Data
-
-|    |    lat |  long |      time      |     pm      |
-|---:|:------:|------:|---------------:|------------:|
-|  1 |  22.46	| 88.37	| 3/28/2023 0:00 | 53.37005078 |
-|  2 |  22.50 |	88.35 |	3/28/2023 0:00 | 49.05392615 |
-|  3 |  22.52 | 88.34 | 3/28/2023 0:00 | 54.73606112 |
-|  4 |  22.54 | 88.34 | 3/28/2023 0:00 | 51.97899615 |
-|  5 |  22.54 | 88.35 | 3/28/2023 0:00 | 60.40570953 |
-
-
-### Details of Kolkata (India), Delhi-NCR (India) and Hamilton, Ontario (Canada) datasets
-
-
-|                    | Kolkata                                  | Delhi-NCR                                |               Canada |
-|-------------------:|:-----------------------------------------|:-----------------------------------------|:---------------------|
-| Total area         | 160 km<sup>2</sup>                       | 559 km<sup>2</sup>                       | 1138 km<sup>2</sup>  |
-| Total samples      | 104,447                                  | 12,542,183                               | 46,080               |
-| PM2.5 Samples      | 104,447                                  | 12,542,183                               | 12,154               |
-| Pollutants covered | PM2.5                                    | PM1, PM2.5 and PM10                      | PM1, PM2.5, PM10, CO, NO, NO2, SO2, O3|
-| Meteorological     | Temp, RH, Pressure, Wind Speed, Rainfall | Temp, RH, Pressure, Wind Speed, Rainfall | -                    |
-| Sensor source      | Colleges / Bus                           | Public bus                               | Commercial van       |
-| Monitoring days    | 142                                      | 91                                       | 114                  |
-
-### Statistical comparison of PM2.5 values in Kolkata, Delhi-NCR and Canada datasets
-
-|           | Kolkata |  Delhi    |  Canada |
-|----------:|:--------|:----------|:--------|
-| Mean      |  75.82  |   207.92  |  15.08  |
-| Std-dev   |  35.49  |   114.36  |  12.87  |
-| Missing%  |   0     |     0     |  73.62  |
 
 ## Benchmarking Algorithms
 
